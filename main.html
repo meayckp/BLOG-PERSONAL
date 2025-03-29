@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de un Ingeniero de Sistemas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Animaciones */
+        .fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100">
+    <!-- ENCABEZADO -->
+    <header class="bg-blue-600 dark:bg-blue-800 text-white text-center p-6 shadow-lg">
+        <h1 class="text-4xl font-bold">Blog de un Ingeniero de Sistemas</h1>
+        <p class="text-lg mt-2">Innovación, desarrollo y tecnología al alcance de todos.</p>
+    </header>
+
+    <div class="max-w-4xl mx-auto mt-8 p-6 bg-white dark:bg-gray-800 shadow-lg rounded-lg fade-in">
+        
+        <!-- SECCIÓN DE PRESENTACIÓN -->
+        <section class="text-center">
+            <img src="https://via.placeholder.com/150" alt="Foto del ingeniero" class="rounded-full mx-auto mb-4 border-4 border-blue-500 dark:border-blue-300">
+            <h2 class="text-3xl font-semibold">Hola, soy Juan Pérez 👨‍💻</h2>
+            <p class="text-gray-700 dark:text-gray-300 mt-2">
+                Soy un <strong>Ingeniero de Sistemas</strong> con más de 5 años de experiencia en desarrollo de software, 
+                ciberseguridad y automatización de procesos. Mi pasión es construir soluciones tecnológicas que hagan la vida más fácil y segura.
+            </p>
+            <div class="mt-4">
+                <a href="#" class="inline-block bg-blue-600 dark:bg-blue-500 text-white py-2 px-6 rounded-lg shadow hover:bg-blue-700 dark:hover:bg-blue-400 transition">
+                    📩 Contáctame
+                </a>
+            </div>
+        </section>
+
+        <!-- SECCIÓN DE HABILIDADES -->
+        <section class="mt-8">
+            <h3 class="text-2xl font-semibold border-b-2 border-blue-500 pb-2">💡 Habilidades principales</h3>
+            <div class="grid grid-cols-2 gap-4 mt-4 text-center">
+                <div class="bg-gray-100 dark:bg-gray-700 p-4 rounded-lg shadow">✔ Desarrollo Web Full Stack</div>
+                <div class="bg-gray-100 dark:bg-gray-700 p-4 rounded-lg shadow">✔ Ciberseguridad y Ethical Hacking</div>
+                <div class="bg-gray-100 dark:bg-gray-700 p-4 rounded-lg shadow">✔ Inteligencia Artificial y Machine Learning</div>
+                <div class="bg-gray-100 dark:bg-gray-700 p-4 rounded-lg shadow">✔ Administración de Servidores y Cloud Computing</div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN DE ARTÍCULOS -->
+        <section class="mt-8">
+            <h3 class="text-2xl font-semibold border-b-2 border-blue-500 pb-2">📌 Últimos artículos</h3>
+            <ul class="mt-4 space-y-4">
+                <li class="p-4 bg-gray-100 dark:bg-gray-700 rounded-lg shadow hover:shadow-md transition">
+                    <a href="#" class="text-blue-600 dark:text-blue-400 hover:underline text-lg">🔒 5 consejos para mejorar la seguridad de tus aplicaciones</a>
+                </li>
+                <li class="p-4 bg-gray-100 dark:bg-gray-700 rounded-lg shadow hover:shadow-md transition">
+                    <a href="#" class="text-blue-600 dark:text-blue-400 hover:underline text-lg">🐳 Docker para principiantes: Cómo contenedizar tu app</a>
+                </li>
+                <li class="p-4 bg-gray-100 dark:bg-gray-700 rounded-lg shadow hover:shadow-md transition">
+                    <a href="#" class="text-blue-600 dark:text-blue-400 hover:underline text-lg">🤖 Cómo empezar en la automatización con Python</a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- SECCIÓN DE CONTACTO -->
+        <section class="mt-8 text-center">
+            <h3 class="text-2xl font-semibold mb-4">🌍 Conéctate conmigo</h3>
+            <div class="flex justify-center space-x-6">
+                <a href="#" class="text-blue-600 dark:text-blue-400 text-2xl hover:text-blue-800 dark:hover:text-blue-300 transition">🔗 LinkedIn</a>
+                <a href="#" class="text-gray-700 dark:text-gray-300 text-2xl hover:text-gray-900 dark:hover:text-gray-100 transition">💻 GitHub</a>
+                <a href="#" class="text-red-500 dark:text-red-400 text-2xl hover:text-red-700 dark:hover:text-red-300 transition">📺 YouTube</a>
+            </div>
+        </section>
+    </div>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="text-center p-4 text-gray-600 dark:text-gray-400 mt-8">
+        © 2025 Juan Pérez - Todos los derechos reservados.
+    </footer>
+
+    <script>
+        // Detectar la preferencia del usuario para el modo oscuro
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.body.classList.add("dark");
+        }
+    </script>
+</body>
+</html>
